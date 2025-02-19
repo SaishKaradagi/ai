@@ -40,7 +40,7 @@ const RoadmapLayout = () => {
     <>
       {data.length == 0 && (
         <Dialog>
-          <DialogTrigger className="text-white w-full">
+          <DialogTrigger className=" border border-slate-500 p-1 rounded-lg hover:bg-slate-500 hover:text-white">
             Search for roadmap{" "}
           </DialogTrigger>
           <DialogContent>

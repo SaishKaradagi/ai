@@ -64,8 +64,8 @@ const Roadmap = ({ data }) => {
   return (
     <>
       <div className="">
-        <h3 className="font-bold text-lg">{data.roadmapTitle}</h3>
-        <h3 className="font-semibold">Time: {data.overallTimeFrame}</h3>
+        <h3 className="text-center font-bold text-lg">{data.roadmapTitle}</h3>
+        <h3 className="text-center font-semibold">Time: {data.overallTimeFrame}</h3>
         <div className="border flex gap-3 rounded-lg  border-gray-500 p-3 mt-2">
           {data.sections.map((cur, index) => {
             return (
