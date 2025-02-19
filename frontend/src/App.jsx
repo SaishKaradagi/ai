@@ -13,6 +13,7 @@ import SignUpPage from "./pages/SignUpPage";
 import ProctedRoutes from "./layouts/ProctedRoutes";
 import MainLayout from "./layouts/MainLayout";
 import RoadmapLayout from "./pages/RoadmapLayout";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
@@ -41,7 +42,9 @@ function App() {
             }
           >
             {/* add all protected routes */}
-            <Route path="/roadmap"  element={<RoadmapLayout />} />
+            <Route path="/roadmap" element={<RoadmapLayout />} />
+
+            <Route path="/AboutPage" element={<AboutPage />} />
           </Route>
         </Routes>
       </Router>

@@ -1,18 +1,19 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+// src/layouts/MainLayout.jsx
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "../pages/Navbar";
+import Footer from "../components/Footer";
 
 const MainLayout = () => {
   return (
-    <div className="w-full">
-      <Header />
-
-      <Outlet />
-
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
       <Footer />
-    </div>  
-  )
-}
+    </div>
+  );
+};
 
-export default MainLayout
+export default MainLayout;
