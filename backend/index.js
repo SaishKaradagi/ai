@@ -93,3 +93,7 @@ Provide the response as clean JSON only, no extra text, markdown, or code blocks
     res.status(500).json({ error: "Error in fetching data through AI" });
   }
 });
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

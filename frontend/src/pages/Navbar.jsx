@@ -27,7 +27,7 @@ const Navbar = () => {
     {
       name: "Resume Builder",
       icon: <FileText className="h-4 w-4 mr-2" />,
-      href: "/resume",
+      href: "/ResumeLanding", // Updated to match the new route
     },
     {
       name: "About",
